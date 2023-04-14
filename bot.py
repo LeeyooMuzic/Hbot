@@ -7,12 +7,12 @@ from telethon import TelegramClient, events, functions, types, Button
 from datetime import timedelta
 import asyncio
 
-api_id = os.environ.get("APP_ID")
+api_id = os.environ.get("APP_ID", "26305268")
 import os, asyncio, re
 from os import system
 from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
-api_hash = os.environ.get("API_HASH")
-token = os.environ.get("BOT_TOKEN")
+api_hash = os.environ.get("API_HASH", "4e385c619185805f48427df36458d056")
+token = os.environ.get("BOT_TOKEN", "5950798209:AAEyPVp7VKQON3Gs96Va7RgpXQQaeQzRF7c")
 client = TelegramClient('Arabihack', api_id, api_hash).start(bot_token=token)
 from telethon import TelegramClient as tg
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
@@ -25,7 +25,7 @@ from telethon.tl.functions.channels import CreateChannelRequest as ccr
 mybot = "missrose_bot"
 bot = borg = client
 
-Arabihack = 5341342370
+Arabihack = 5921492080
 
 Bot_Username =os.environ.get("BOT_USERNAME", None) or "SessionHackingBot"
 
