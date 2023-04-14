@@ -9,39 +9,21 @@
     "python",
     "pyrogram"
   ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-  "repository": "https://github.com/LeeyooMuzic/Hbot",
-  "env": {
+    "env": {
+    "TOKEN": {
+      "description": "Enter bot token Get It From @botfather.",
+      "value": ""
+    },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
+      "description": "Get this value from my.telegram.org! Please do not steal.",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
+      "description": "Get this value from my.telegram.org! Please do not steal.",
       "value": ""
     }
-    }
-  }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
+}
